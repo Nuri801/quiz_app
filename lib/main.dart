@@ -14,14 +14,24 @@ class QuizApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.indigo
       ),
-      home: Scaffold(
-        body: Center(
-          child: Container(
-            color: Colors.grey,
-
-          ),
-        ),
+      home: const Scaffold(
+        backgroundColor: Colors.black87,
+        body: Questions()
       ),
     );
+  }
+}
+
+class Questions extends StatefulWidget {
+  const Questions({Key? key}) : super(key: key);
+
+  @override
+  State<Questions> createState() => _QuestionsState();
+}
+
+class _QuestionsState extends State<Questions> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }

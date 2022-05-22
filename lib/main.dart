@@ -35,7 +35,7 @@ class _QuestionsState extends State<Questions> {
     return Center(
       child: Container(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Text(
               'Question goes here',
@@ -43,13 +43,20 @@ class _QuestionsState extends State<Questions> {
                 color: Colors.white
               ),
             ),
-            MaterialButton(
-                onPressed: () {},
-              color: Colors.red,
+            SizedBox(
+              height: 16,
             ),
-            MaterialButton(
-              onPressed: () {},
-              color: Colors.green,
+            Column(
+              children: [
+                MaterialButton(
+                  onPressed: () {},
+                  color: Colors.red,
+                ),
+                MaterialButton(
+                  onPressed: () {},
+                  color: Colors.green,
+                ),
+              ],
             )
           ],
         ),

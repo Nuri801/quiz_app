@@ -32,6 +32,28 @@ class Questions extends StatefulWidget {
 class _QuestionsState extends State<Questions> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Center(
+      child: Container(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'Question goes here',
+              style: TextStyle(
+                color: Colors.white
+              ),
+            ),
+            MaterialButton(
+                onPressed: () {},
+              color: Colors.red,
+            ),
+            MaterialButton(
+              onPressed: () {},
+              color: Colors.green,
+            )
+          ],
+        ),
+      ),
+    );
   }
 }

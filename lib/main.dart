@@ -15,10 +15,12 @@ class QuizApp extends StatelessWidget {
         primarySwatch: Colors.indigo
       ),
       home: Scaffold(
-        appBar: AppBar(
-          title: Center(child: const Text('Quizie')),
+        body: Center(
+          child: Container(
+            color: Colors.grey,
+
+          ),
         ),
-        body: Container(),
       ),
     );
   }

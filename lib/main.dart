@@ -51,10 +51,12 @@ class _QuestionsState extends State<Questions> {
                 MaterialButton(
                   onPressed: () {},
                   color: Colors.red,
+                  child: Text('False'),
                 ),
                 MaterialButton(
                   onPressed: () {},
                   color: Colors.green,
+                  child: Text('True'),
                 ),
               ],
             )

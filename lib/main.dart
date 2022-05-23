@@ -48,15 +48,24 @@ class _QuestionsState extends State<Questions> {
             ),
             Column(
               children: [
-                MaterialButton(
-                  onPressed: () {},
-                  color: Colors.red,
-                  child: Text('False', style: TextStyle(color: Colors.white),),
+                SizedBox(
+                  width: 180,
+                  height: 80,
+                  child: MaterialButton(
+                    onPressed: () {},
+                    color: Colors.red,
+                    child: Text('False', style: TextStyle(color: Colors.white),),
+                  ),
                 ),
-                MaterialButton(
-                  onPressed: () {},
-                  color: Colors.green,
-                  child: Text('True', style: TextStyle(color: Colors.white),),
+                SizedBox(height: 20),
+                SizedBox(
+                  width: 180,
+                  height: 80,
+                  child: MaterialButton(
+                    onPressed: () {},
+                    color: Colors.green,
+                    child: Text('True', style: TextStyle(color: Colors.white),),
+                  ),
                 ),
               ],
             )

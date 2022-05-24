@@ -42,7 +42,8 @@ class _QuestionsState extends State<Questions> {
                 child: Text( 
                   'Question goes here',
                   style: TextStyle(
-                    color: Colors.white
+                    color: Colors.white,
+                    fontSize: 20
                   ),
                 ),
               ),

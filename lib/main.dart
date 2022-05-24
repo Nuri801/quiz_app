@@ -44,7 +44,7 @@ class _QuestionsState extends State<Questions> {
               ),
             ),
             SizedBox(
-              height: 16,
+              height: 400,
             ),
             Column(
               children: [

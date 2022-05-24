@@ -54,13 +54,15 @@ class _QuestionsState extends State<Questions> {
             // ),
             Column(
               children: [
-                SizedBox(
-                  width: 180,
-                  height: 80,
-                  child: MaterialButton(
-                    onPressed: () {},
-                    color: Colors.red,
-                    child: Text('False', style: TextStyle(color: Colors.white),),
+                Expanded(
+                  child: SizedBox(
+                    width: 180,
+                    height: 80,
+                    child: MaterialButton(
+                      onPressed: () {},
+                      color: Colors.red,
+                      child: Text('False', style: TextStyle(color: Colors.white),),
+                    ),
                   ),
                 ),
                 SizedBox(height: 20),

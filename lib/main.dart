@@ -11,13 +11,8 @@ class QuizApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Quiz App',
-      theme: ThemeData(
-        primarySwatch: Colors.indigo
-      ),
-      home: const Scaffold(
-        backgroundColor: Colors.black87,
-        body: Questions()
-      ),
+      theme: ThemeData(primarySwatch: Colors.indigo),
+      home: const Scaffold(backgroundColor: Colors.black87, body: Questions()),
     );
   }
 }
@@ -39,11 +34,14 @@ class _QuestionsState extends State<Questions> {
           children: [
             Expanded(
               child: Center(
-                child: Text( 
-                  'Question goes here',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20
+                child: Padding(
+                  padding: const EdgeInsets.all(50),
+                  child: Center(
+                    child: Text(
+                      'Question goes here Question goes here Question goes here Question goes here Question goes here?',
+                      style: TextStyle(color: Colors.white, fontSize: 27),
+
+                    ),
                   ),
                 ),
               ),
@@ -54,25 +52,29 @@ class _QuestionsState extends State<Questions> {
             // ),
             Column(
               children: [
-                Expanded(
-                  child: SizedBox(
-                    width: 180,
-                    height: 80,
-                    child: MaterialButton(
-                      onPressed: () {},
-                      color: Colors.red,
-                      child: Text('False', style: TextStyle(color: Colors.white),),
+                SizedBox(
+                  width: 340,
+                  height: 80,
+                  child: MaterialButton(
+                    onPressed: () {},
+                    color: Colors.red,
+                    child: Text(
+                      'False',
+                      style: TextStyle(color: Colors.white),
                     ),
                   ),
                 ),
                 SizedBox(height: 20),
                 SizedBox(
-                  width: 180,
+                  width: 340,
                   height: 80,
                   child: MaterialButton(
                     onPressed: () {},
                     color: Colors.green,
-                    child: Text('True', style: TextStyle(color: Colors.white),),
+                    child: Text(
+                      'True',
+                      style: TextStyle(color: Colors.white),
+                    ),
                   ),
                 ),
                 SizedBox(height: 20)

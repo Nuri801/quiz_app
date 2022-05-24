@@ -38,10 +38,12 @@ class _QuestionsState extends State<Questions> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Expanded(
-              child: Text(
-                'Question goes here',
-                style: TextStyle(
-                  color: Colors.white
+              child: Center(
+                child: Text( 
+                  'Question goes here',
+                  style: TextStyle(
+                    color: Colors.white
+                  ),
                 ),
               ),
             ),
@@ -70,6 +72,7 @@ class _QuestionsState extends State<Questions> {
                     child: Text('True', style: TextStyle(color: Colors.white),),
                   ),
                 ),
+                SizedBox(height: 20)
               ],
             )
           ],

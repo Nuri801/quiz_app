@@ -37,15 +37,18 @@ class _QuestionsState extends State<Questions> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Text(
-              'Question goes here',
-              style: TextStyle(
-                color: Colors.white
+            Expanded(
+              child: Text(
+                'Question goes here',
+                style: TextStyle(
+                  color: Colors.white
+                ),
               ),
             ),
-            SizedBox(
-              height: 400,
-            ),
+            // SizedBox(
+            //   child: Text('What is 4 times 4?', style: TextStyle(color: Colors.white),),
+            //   height: 400,
+            // ),
             Column(
               children: [
                 SizedBox(
